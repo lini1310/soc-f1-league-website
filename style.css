@@ -16,9 +16,7 @@ body {
 
 /*Menu*/
 
-.fa-solid {
-    display: none;
-}
+
 
 .unterlage-1 {
     position: absolute;
@@ -149,7 +147,10 @@ a {
 
 @media (max-width: 612px) {
 
-    
+.writings, .unterpunkte-f1, .unterpunkte-more {
+    all: unset;
+}
+
 }
 
 /*Menu ende*/
