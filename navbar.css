@@ -180,7 +180,22 @@ img {
     margin-top: 1px;
     background-color: var(--unterlage-unten-1);
     padding: 1rem 0;
+
+    animation-name: moveDown;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    z-index: -1;
   }
+
+  @keyframes moveDown{
+    0% {
+      transform: translateY(-500px);
+    }
+    100%{
+      transform: translateY(0);
+    }
+  }
+
 
   .nav-item {
     margin: 0;
