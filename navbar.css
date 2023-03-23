@@ -38,7 +38,7 @@ a {
     top: 0;
     left: 0;
     width: 98%;
-    height: 6vh;
+    height: 60px;
     background-color: var(--unterlage-unten-2);
     border-right: 20px;
     border-bottom-right-radius: 20px 20px;
@@ -48,8 +48,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  padding: 1rem;
+  padding: 10px;
   position: relative;
 }
 
@@ -74,6 +73,7 @@ img {
 .nav-item {
   margin-left: 1rem;
 }
+
 .nav-item:hover {
   background-color: rgba(0, 0, 0, 0.2);
   width: 50%;
@@ -163,15 +163,21 @@ img {
     display: flex;
   }
 
+  .unterlage-1, .unterlage-2 {
+    width: 100%;
+    border-bottom-right-radius: 0px;
+  }
+
+
   .nav-menu.active {
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 99%;
+    width: 100%;
     top: 100%;
     left: 0;
     right: 0;
-    margin-top: -1rem;
+    margin-top: 1px;
     background-color: var(--unterlage-unten-1);
     padding: 1rem 0;
   }
