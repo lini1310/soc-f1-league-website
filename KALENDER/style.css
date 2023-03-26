@@ -1,7 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
 
+#calendar {
+  border-collapse: collapse;
+  border: 1px solid #999;
+  width: 100%;
+  max-width: 800px;
+}
 
-@font-face {
-    font-family: "F1";
-    src: url("/1. Anderes/font/Formula1-Regular.ttf");
-  }
+#calendar th,
+#calendar td {
+  border: 1px solid #999;
+  padding: 8px;
+  text-align: center;
+}
 
+#calendar th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.event {
+  background-color: #FFC107;
+  color: black;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  z-index: 1;
+  transition: visibility 0s, opacity 0.2s ease-in-out;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0;
+}
+
+.btn-group button {
+  margin: 0 4px;
+}

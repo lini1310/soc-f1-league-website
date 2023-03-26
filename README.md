@@ -1,2 +1,14 @@
-# soc-league-website
- This is the official read me for the soc-league-website
+![Logo]()
+
+#
+
+SWP Website Project | SOC Esport Website
+
+## Screenshots
+
+![App Screenshot]()
+
+## Active Developers
+
+- [@Koopro](https://github.com/Koopro)
+- [@lini1310](https://github.com/lini1310)
