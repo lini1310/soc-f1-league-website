@@ -1,4 +1,4 @@
-![Logo](/1.%20Anderes/Logo/logo.jpg)
+![Logo](/1.%20Anderes/Photos%20f%C3%BCr%20Webseite/githubreadme.png)
 
 #
 
