@@ -1,7 +1,61 @@
-
-
 @font-face {
-    font-family: "F1";
-    src: url("/1. Anderes/font/Formula1-Regular.ttf");
-  }
+  font-family: "F1";
+  src: url("/1. Anderes/font/Formula1-Regular.ttf");
+}
 
+main {
+  margin-top: -4.5rem;
+  background-color: rgb(57, 56, 56);
+  height: 100vh;
+  padding-top: 45vh;
+}
+
+.social-media-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  padding: 1.5rem;
+  width: calc(100% / 5 - 1rem);
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background-color: #e5e5e5;
+  transform: scale(1.05);
+  box-shadow: 0 6px 1px rgba(0, 0, 0, 0.15), 0 3px 1px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.card i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: calc(50% - 1rem);
+  }
+  main {
+    padding-top: 9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+  main {
+    padding-top: 9rem;
+  }
+}
