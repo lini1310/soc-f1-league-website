@@ -53,13 +53,11 @@ a {
 }
 
 .logo {
-
   color: #fff;
 }
-img {
+.image {
   width: 40px;
   height: 40px;
-
   margin-right: 5rem;
   border-radius: 20px;
 }
@@ -156,7 +154,7 @@ img {
   .nav-menu {
     display: none;
   }
-  img{
+  .image{
     margin-right: 0.5rem;
     z-index: 3;
   }
