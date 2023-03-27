@@ -37,6 +37,7 @@
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   padding: 10px;
+  align-items: center;
   text-align: center;
   grid-template-rows: repeat(6, 1fr);
 }
@@ -50,12 +51,18 @@
 }
 
 .calendar-days > div:hover {
-  background-color: #58585865;
+  background-color: #e1e1e15a;
+  height: 10vh;
 }
 
 .today {
   background-color: #ffffff;
   color: #000000;
+  height: 10vh;
+}
+.today:hover {
+  color: #ffffff;
+  height: 10vh;
 }
 
 .prev-month,
