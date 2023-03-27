@@ -13,12 +13,13 @@ body {
 
 .welcome-pic {
   display: flex;
+  position: absolute;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   height: auto;
   top: 0px;
-  
+  z-index: -2;
 }
 @media only screen and (max-width: 600px) {
 
