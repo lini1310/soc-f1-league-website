@@ -8,7 +8,6 @@
     <link rel="icon" href="/1. Anderes/Logo/logo.jpg" />
     <link rel="stylesheet" href="/2. navbar/navbar.css" />
     <script src="/2. navbar/navbar.js" defer></script>
-    <script src="calendar.js" defer></script>
     <title>SOC Racing League</title>
   </head>
   <body>
@@ -73,23 +72,15 @@
         /></a>
       </nav>
     </header>
+      <main>
+        <div id="calendar"></div>
+        <div class="calendar-header">
+          <button id="prev-month" class="nav-btn">&lt;</button>
+          <button id="next-month" class="nav-btn">&gt;</button>
+        </div>
+        </div>
+      </main>
     
-    <div class="calendar">
-      <div class="calendar-header">
-        <button id="prev" class="nav-btn">&lt;</button>
-        <h2 id="month-year"></h2>
-        <button id="next" class="nav-btn">&gt;</button>
-      </div>
-      <div class="calendar-weekdays">
-        <div>Sun</div>
-        <div>Mon</div>
-        <div>Tue</div>
-        <div>Wed</div>
-        <div>Thu</div>
-        <div>Fri</div>
-        <div>Sat</div>
-      </div>
-      <div class="calendar-days"></div>
-    </div>
+    <script src="calendar.js"></script>
   </body>
 </html>
