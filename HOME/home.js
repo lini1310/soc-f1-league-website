@@ -46,7 +46,7 @@ new Twitch.Embed("twitch-embed", {
     
     isLive("soc_league").then(live => {
       if (live) {
-        getElementById("overtext").innerHTML = "JETZT LIVE!";
+        getElementById("overtext").innerHTML = "🟣 - JETZT LIVE!";
       } else {
         getElementById("overtext").innerHTML = "🔴 - Offline, in unserem Kalender sind die nächsten Rennen eingetragen!";
       }
