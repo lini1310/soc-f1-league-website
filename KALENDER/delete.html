@@ -1,65 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events Manager</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Events</title>
     <style>
-      button {
-        margin-left: 10px;
-      }
+        button {
+            margin-left: 10px;
+        }
     </style>
-  </head>
-  <body>
-    <h1>Events Manager</h1>
+</head>
+<body>
+    <h1>Delete Events</h1>
     <ul id="events-list"></ul>
     <script>
-      // Replace this with your Express server API URL
-      const API_URL = "http://localhost:3000";
+        // Replace this with your Express server API URL
+        const API_URL = 'http://localhost:3000';
 
-      async function fetchEvents() {
-        const response = await fetch(`${API_URL}/events`);
-        const events = await response.json();
-        displayEvents(events);
-      }
-
-      async function deleteEvent(id) {
-        try {
-          const response = await fetch(`${API_URL}/events/${id}`, {
-            method: "DELETE",
-          });
-
-          if (response.status === 204) {
-            fetchEvents();
-          } else if (response.status === 404) {
-            alert("Event not found.");
-          } else {
-            alert("An error occurred while deleting the event.");
-          }
-        } catch (error) {
-          console.error(error);
-          alert("A network error occurred while deleting the event.");
+        async function fetchEvents() {
+            const response = await fetch(`${API_URL}/events`);
+            const events = await response.json();
+            displayEvents(events);
         }
-      }
 
-      function displayEvents(events) {
-        const eventsList = document.getElementById("events-list");
-        eventsList.innerHTML = "";
+        async function deleteEvent(id) {
+            try {
+                const response = await fetch(`${API_URL}/events/${id}`, { method: 'DELETE' });
 
-        events.forEach((event) => {
-          const listItem = document.createElement("li");
-          listItem.textContent = `${event.event_date}: ${event.title}`;
+                if (response.status === 204) {
+                    fetchEvents();
+                } else if (response.status === 404) {
+                    alert('Event not found.');
+                } else {
+                    alert('An error occurred while deleting the event.');
+                }
+            } catch (error) {
+                console.error(error);
+                alert('A network error occurred while deleting the event.');
+            }
+        }
 
-          const deleteButton = document.createElement("button");
-          deleteButton.textContent = "Delete";
-          deleteButton.onclick = () => deleteEvent(event.id);
+        function displayEvents(events) {
+            const eventsList = document.getElementById('events-list');
+            eventsList.innerHTML = '';
 
-          listItem.appendChild(deleteButton);
-          eventsList.appendChild(listItem);
-        });
-      }
+            events.forEach(event => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${event.event_date}: ${event.title}`;
 
-      fetchEvents();
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.onclick = () => deleteEvent(event.id);
+
+                listItem.appendChild(deleteButton);
+                eventsList.appendChild(listItem);
+            });
+        }
+
+        fetchEvents();
     </script>
-  </body>
+</body>
 </html>
