@@ -16,32 +16,56 @@
       <div class="unterlage-2"></div>
       <nav class="navbar">
         <ul class="nav-menu">
-          <li class="nav-item"><a href="/HOME/home.html" class="nav-link">HOME</a></li>
-          <li class="nav-item"><a href="/NEWS/news.html" class="nav-link">NEWS</a></li>
+          <li class="nav-item">
+            <a href="/HOME/home.html" class="nav-link">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a href="/NEWS/news.html" class="nav-link">NEWS</a>
+          </li>
           <li class="nav-item dropdown">
             <a href="#" class="nav-link">F1</a>
             <ul class="dropdown-menu">
               <li class="dropdown-item">
-                <a href="/AKTUELLE STANDINGS/aktuelle-standings.html" class="dropdown-link">Aktuelle Standings</a>
+                <a
+                  href="/AKTUELLE STANDINGS/aktuelle-standings.html"
+                  class="dropdown-link"
+                  >Aktuelle Standings</a
+                >
               </li>
               <li class="dropdown-item">
-                <a href="/LIGA-EINSTELLUNGEN/liga-settings.html" class="dropdown-link">Liga-Einstellungen</a>
+                <a
+                  href="/LIGA-EINSTELLUNGEN/liga-settings.html"
+                  class="dropdown-link"
+                  >Liga-Einstellungen</a
+                >
               </li>
               <li class="dropdown-item">
                 <a href="#" class="dropdown-link">Reglement und Strafen</a>
               </li>
             </ul>
           </li>
-          <li class="nav-item"><a href="/KALENDER/kalender.html" class="nav-link">KALENDER</a></li>
-          <li class="nav-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLScsVQpgZJj-wYR0mAF1CPnbAt8GHSawu6kqCg4BXdJ9tnVExA/viewform?usp=sf_link" class="nav-link">BEWERBUNG</a></li>
+          <li class="nav-item">
+            <a href="/KALENDER/kalender.html" class="nav-link">KALENDER</a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScsVQpgZJj-wYR0mAF1CPnbAt8GHSawu6kqCg4BXdJ9tnVExA/viewform?usp=sf_link"
+              class="nav-link"
+              >BEWERBUNG</a
+            >
+          </li>
           <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle">MORE</a>
             <ul class="dropdown-menu">
               <li class="dropdown-item">
-                <a href="/SOCIAL MEDIA/social-media.html" class="dropdown-link">Social Media</a>
+                <a href="/SOCIAL MEDIA/social-media.html" class="dropdown-link"
+                  >Social Media</a
+                >
               </li>
               <li class="dropdown-item">
-                <a href="/UNSTER TEAM/our-team.html" class="dropdown-link">Unser Team</a>
+                <a href="/UNSTER TEAM/our-team.html" class="dropdown-link"
+                  >Unser Team</a
+                >
               </li>
             </ul>
           </li>
@@ -51,12 +75,47 @@
           <span class="bar" id="2"></span>
           <span class="bar" id="3"></span>
         </div>
-        <a href="#" class="logo"><img class="image" src="/1. Anderes/Logo/logo.jpg" alt="logo" /></a>
+        <a href="#" class="logo"
+          ><img class="image" src="/1. Anderes/Logo/logo.jpg" alt="logo"
+        /></a>
       </nav>
     </header>
-    <!-- Your main content goes here -->
+    <div class="main-content">
+      <section id="hero">
+        <h1>Understanding Rules & Penalties</h1>
+        <p>
+          Learn the rules and penalties to ensure a fair and safe environment.
+        </p>
+      </section>
 
+      <section id="rules">
+        <h2>Rules</h2>
+        <!-- Add your rule items here -->
+      </section>
 
-    
+      <section id="penalties">
+        <h2>Penalties</h2>
+        <!-- Add your penalty items here -->
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="text" name="subject" placeholder="Subject" required />
+          <textarea name="message" placeholder="Message" required></textarea>
+          <button type="submit">Submit</button>
+          <div id="success-message" style="display: none">
+            <span>&#10003;</span> Email sent successfully
+          </div>
+        </form>
+      </section>
+    </div>
+    <footer>
+      <p>Copyright &copy; 2023 Rules & Penalties. All rights reserved.</p>
+      <!-- Add your social media links here -->
+    </footer>
+    <script src="mail.js"></script>
   </body>
 </html>

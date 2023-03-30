@@ -3,13 +3,14 @@ const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const mysql = require('mysql2/promise');
 const cors = require('cors');
+const nodemailer = require('nodemailer');
 
 dotenv.config();
 const app = express();
 app.use(cors());
 
 app.use(bodyParser.json());
-const { DB_HOST, DB_USER, DB_PASSWORD, DB_NAME } = process.env;
+const { DB_HOST, DB_USER, DB_NAME } = process.env;
 
 const db = mysql.createPool({
   host: DB_HOST,
@@ -17,6 +18,38 @@ const db = mysql.createPool({
   password: "",
   database: DB_NAME,
 });
+
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
+  },
+});
+
+// Add a new route to handle the form submission
+app.post('/contact', async (req, res) => {
+  const { name, email, subject, message } = req.body;
+
+  if (!name || !email || !subject || !message) {
+    return res.status(400).json({ error: 'All fields are required.' });
+  }
+
+  try {
+    await transporter.sendMail({
+      from: process.env.EMAIL_USER,
+      to: process.env.RECIPIENT_EMAIL,
+      subject: subject,
+      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+    });
+
+    res.status(200).json({ message: 'Email sent successfully.' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'An error occurred while sending the email.' });
+  }
+});
+
 app.post('/events', async (req, res) => {
     try {
       const { title, event_date } = req.body;
