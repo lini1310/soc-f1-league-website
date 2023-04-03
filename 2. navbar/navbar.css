@@ -156,14 +156,14 @@ a {
   }
   .image{
     margin-right: 0.5rem;
-    z-index: 3;
+    z-index: 11;
   }
   .logo{
-    z-index: 3;
+    z-index: 11;
   }
   .hamburger {
     display: flex;
-    z-index: 2;
+    z-index: 10;
   }
 
   .unterlage-1, .unterlage-2 {
@@ -184,12 +184,13 @@ a {
     margin-top: 1px;
     background-color: var(--unterlage-unten-1);
     padding: 1rem 0;
+    z-index: 10;
    
 
     animation-name: moveDown;
     animation-duration: 0.6s;
     animation-timing-function: ease-out;
-    z-index: 0;
+    z-index: 9;
   }
 
   @keyframes moveDown{

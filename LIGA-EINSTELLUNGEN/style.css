@@ -1,7 +1,47 @@
-
-
 @font-face {
-    font-family: "F1";
-    src: url("/1. Anderes/font/Formula1-Regular.ttf");
-  }
+  font-family: "F1";
+  src: url("/1. Anderes/font/Formula1-Regular.ttf");
+}
 
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: #fff;
+  margin: 0; 
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* Hero Section */
+#hero {
+  background-color: #f3f3f3;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+}
+
+#hero p {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+section {
+  padding: 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer {
+  margin-top: 41%;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}

@@ -9,7 +9,7 @@ body{
   background-color: #fff;
   margin: 0;
 }
-#main-content {
+.main-content {
   flex: 1;
 }
 /* Hero Section */
