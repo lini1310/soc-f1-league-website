@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Events</title>
+    <style>
+        button {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Delete Events</h1>
+    <ul id="events-list"></ul>
+    <script>
+        // Replace this with your Express server API URL
+        const API_URL = 'http://45.145.224.59:3000';
+
+        async function fetchEvents() {
+            const response = await fetch(`${API_URL}/events`);
+            const events = await response.json();
+            displayEvents(events);
+        }
+
+        async function deleteEvent(id) {
+            try {
+                const response = await fetch(`${API_URL}/events/${id}`, { method: 'DELETE' });
+
+                if (response.status === 204) {
+                    fetchEvents();
+                } else if (response.status === 404) {
+                    alert('Event not found.');
+                } else {
+                    alert('An error occurred while deleting the event.');
+                }
+            } catch (error) {
+                console.error(error);
+                alert('A network error occurred while deleting the event.');
+            }
+        }
+
+        function displayEvents(events) {
+            const eventsList = document.getElementById('events-list');
+            eventsList.innerHTML = '';
+
+            events.forEach(event => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${event.event_date}: ${event.title}`;
+
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.onclick = () => deleteEvent(event.id);
+
+                listItem.appendChild(deleteButton);
+                eventsList.appendChild(listItem);
+            });
+        }
+
+        fetchEvents();
+    </script>
+</body>
+</html>

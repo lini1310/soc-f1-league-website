@@ -10,10 +10,9 @@ body {
 }
 
 @font-face {
-    font-family: "F1";
-    src: url("/1. Anderes/font/Formula1-Regular.ttf");
-  }
-
+  font-family: "F1";
+  src: url("/1. Anderes/font/Formula1-Regular.ttf");
+}
 
 .welcome-pic {
   display: flex;
@@ -24,7 +23,7 @@ body {
   margin-right: auto;
   height: auto;
   top: 0px;
-  z-index: -2;
+  z-index: 2;
 }
 
 .latestvideo {
@@ -43,7 +42,7 @@ body {
   border-radius: 30px;
   opacity: 0.7;
   background-color: var(--videobackground);
-  z-index: 2;
+  z-index: -2;
 }
 
 button {
@@ -62,7 +61,6 @@ button {
   opacity: 0.6;
   z-index: 4;
 }
-
 
 .video {
   position: absolute;
@@ -83,7 +81,6 @@ button:hover {
   z-index: 4;
   color: white;
 }
-
 
 @media only screen and (max-width: 1244px) {
   body {
@@ -110,13 +107,12 @@ button:hover {
   }
 }
 
-
 @media only screen and (max-width: 750px) {
   .latestvideo {
     margin-top: 120px;
     height: 300px;
   }
-  
+
   .background-video {
     width: 40vh;
     height: 25vh;
@@ -140,11 +136,8 @@ button:hover {
   }
 }
 
-
 @media only screen and (max-width: 880px) {
-
-  .welcome-pic{
+  .welcome-pic {
     margin-top: 0px;
   }
-
-  }
+}

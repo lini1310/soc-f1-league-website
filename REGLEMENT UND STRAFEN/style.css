@@ -2,7 +2,7 @@
   font-family: "F1";
   src: url("/1. Anderes/font/Formula1-Regular.ttf");
 }
-body{
+body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -40,13 +40,15 @@ section h2 {
 }
 
 /* Rules and Penalties Sections */
-#rules, #penalties {
+#rules,
+#penalties {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
 }
 
-.rule, .penalty {
+.rule,
+.penalty {
   flex: 1;
   min-width: 45%;
   background-color: #f3f3f3;
@@ -54,11 +56,13 @@ section h2 {
   border-radius: 5px;
 }
 
-.rule h3, .penalty h3 {
+.rule h3,
+.penalty h3 {
   font-size: 1.5rem;
 }
 
-.rule p, .penalty p {
+.rule p,
+.penalty p {
   font-size: 1rem;
 }
 
@@ -70,7 +74,8 @@ section h2 {
   align-items: center;
 }
 
-#contact input, #contact textarea {
+#contact input,
+#contact textarea {
   padding: 0.5rem;
   border: 1px solid #ccc;
   min-width: 45%;
@@ -105,6 +110,22 @@ section h2 {
   z-index: 1000;
   transition: opacity 0.3s ease;
 }
+#error-message {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #d11919;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
 
 /* Footer Section */
 footer {
@@ -129,23 +150,28 @@ footer {
     font-size: 1.5rem;
   }
 
-  #rules, #penalties {
+  #rules,
+  #penalties {
     flex-direction: column;
   }
 
-  .rule, .penalty {
+  .rule,
+  .penalty {
     min-width: 100%;
   }
 
-  .rule h3, .penalty h3 {
+  .rule h3,
+  .penalty h3 {
     font-size: 1.25rem;
   }
 
-  .rule p, .penalty p {
+  .rule p,
+  .penalty p {
     font-size: 0.9rem;
   }
 
-  #contact input, #contact textarea {
+  #contact input,
+  #contact textarea {
     min-width: 100%;
     max-width: 100%;
   }

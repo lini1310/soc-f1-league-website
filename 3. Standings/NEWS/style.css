@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "F1";
+  src: url("/1. Anderes/font/Formula1-Regular.ttf");
+}
+.discord-message {
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+.discord-message strong {
+  margin-right: 4px;
+  font-weight: bold;
+}
+/* Add this to your style.css */
+.empty-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f5f5;
+  margin-top: -5rem;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  color: #555;
+}
