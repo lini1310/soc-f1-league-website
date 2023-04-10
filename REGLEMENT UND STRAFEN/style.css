@@ -37,6 +37,13 @@ section {
 section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+section h3 {
+  font-size: 2rem;
+  margin-left: 1rem;
 }
 
 /* Rules and Penalties Sections */
@@ -45,6 +52,26 @@ section h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+.rules-c, .penalty-c {
+  display: flex;
+  user-select: none;
+}
+
+.rules-c, .penalty-c {
+  cursor: pointer;
+}
+
+#rulespic {
+  display: none;
+}
+
+#penaltypic {
+  display: none;
 }
 
 .rule,
@@ -126,6 +153,8 @@ section h2 {
   z-index: 1000;
   transition: opacity 0.3s ease;
 }
+
+
 
 /* Footer Section */
 footer {
