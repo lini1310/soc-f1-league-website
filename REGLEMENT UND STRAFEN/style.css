@@ -163,50 +163,100 @@ section h3 {
 
 /* Footer Section */
 footer {
-  margin-top: 10.5rem;
+  margin-top: 5.5rem;
   background-color: #333;
   color: #fff;
   padding: 1rem 0;
   text-align: center;
 }
 
+
+
 /* Media Queries */
- @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1100px) {
+    img {
+      height: auto;
+      width: 90%;
+    }
+  }
+
+
+ @media screen and (max-width: 770px) {
+  hero {
+    background-color: #f3f3f3;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
   #hero h1 {
-    font-size: 2rem;
-  }
-
-  #hero p {
-    font-size: 1rem;
-  }
-
-  section h2 {
     font-size: 1.5rem;
   }
-
-  #rules,
-  #penalties {
-    flex-direction: column;
-  }
-
-  .rule,
-  .penalty {
-    min-width: 100%;
-  }
-
-  .rule h3,
-  .penalty h3 {
-    font-size: 1.25rem;
-  }
-
-  .rule p,
-  .penalty p {
-    font-size: 0.9rem;
+  
+  #hero p {
+    font-size: 0.8rem;
   }
 
   #contact input,
   #contact textarea {
-    min-width: 100%;
-    max-width: 100%;
+    min-width: 70%;
+    max-width: 70%;
+  }
+
+  footer {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  #hero {
+    background-color: #f3f3f3;
+    padding: 1.5rem 0;
+    text-align: center;
+  }
+  
+  #hero h1 {
+    font-size: 1.5rem;
+  }
+  
+  #hero p {
+    font-size: 0.8rem;
+  }
+
+  #rules h2, #rulesarrow, #penalties h2, #penaltyarrow, #contact h2 {
+    font-size: 1.5rem;
+  }
+
+
+  button {
+    height: 40px;
+  }
+}
+
+
+@media screen and (max-width: 430px) {
+  #hero {
+    background-color: #f3f3f3;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  #hero h1 {
+    font-size: 1rem;
+  }
+  
+  #hero p {
+    display: none;
+  }
+
+  #rules h2, #rulesarrow, #penalties h2, #penaltyarrow, #contact h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    height: 40px;
+  }
+
+  footer {
+    font-size: 0.75rem;
   }
 }
