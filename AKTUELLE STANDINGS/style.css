@@ -81,6 +81,7 @@
     border-radius: 15px;
     opacity: 0.6;
     z-index: 4;
+    box-shadow: 10px 5px 5px white;
   }
 
   button:hover {
@@ -95,4 +96,175 @@
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+  }
+
+  @media screen and (max-width: 1440px) {
+    .dt-standings {
+      width: 1000px;
+      height: 400px;
+    }
+
+    .driver-pic, .team-pic {
+      width: auto;
+      height: 380px;
+      border-radius: 30px;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+
+    button {
+      width: 360px;
+      height: 45px;
+    }
+  }
+
+  
+  @media screen and (max-width: 1024px) {
+    .dt-standings {
+      width: 800px;
+      height: 1400px;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-around;
+    }
+
+    .driver-pic, .team-pic {
+      width: auto;
+      height: 580px;
+      border-radius: 30px;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  }
+
+  @media screen and (max-width: 820px) {
+    .dt-standings {
+      width: 600px;
+    }
+
+    #hero h1 {
+      font-size: 2rem;
+    }
+
+    #hero p {
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .dt-standings {
+      width: 400px;
+      height: 1100px;
+    }
+
+    .driver-pic, .team-pic {
+      width: auto;
+      height: 440px;
+      border-radius: 30px;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+    
+    button {
+      font-size: 0.8rem;
+      width: 320px;
+    }
+  }
+
+  @media screen and (max-width: 414px) {
+    #hero h1 {
+      font-size: 1.3rem;
+    }
+
+    #hero p {
+      font-size: 0.7rem;
+    }
+
+    #hero {
+      background-color: #f3f3f3;
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    .dt-standings {
+      width: 300px;
+      height: 850px;
+    }
+
+    .driver-pic, .team-pic {
+      width: auto;
+      height: 340px;
+      border-radius: 30px;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+    
+    button {
+      font-size: 0.7rem;
+      width: 250px;
+      height: 30px;
+    }
+
+    footer {
+      font-size: 0.6rem;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .dt-standings {
+      width: 400px;
+      height: 1100px;
+    }
+
+    .driver-pic, .team-pic {
+      width: auto;
+      height: 440px;
+      border-radius: 30px;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+    
+    button {
+      font-size: 0.8rem;
+      width: 320px;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    #hero h1 {
+      font-size: 1rem;
+    }
+
+    #hero p {
+      display: none;
+    }
+
+    #hero {
+      background-color: #f3f3f3;
+      padding: 1.5rem 0;
+      text-align: center;
+    }
+
+    .dt-standings {
+      width: 250px;
+      height: 700px;
+    }
+
+    .driver-pic, .team-pic {
+      width: auto;
+      height: 280px;
+      border-radius: 30px;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+    
+    button {
+      font-size: 0.5rem;
+      width: 200px;
+      height: 30px;
+    }
+
+    footer {
+      font-size: 0.5rem;
+    }
   }

@@ -110,6 +110,11 @@ button:hover {
   }
 }
 
+@media only screen and (max-width: 880px) {
+  .welcome-pic {
+    margin-top: 0px;
+  }
+}
 
 @media only screen and (max-width: 750px) {
   .latestvideo {
@@ -125,7 +130,7 @@ button:hover {
   .overtext {
     width: 40vh;
     height: 20vh;
-    margin-top: -280px;
+    margin-top: -250px;
     height: auto;
     display: flex;
     align-items: center;
@@ -141,6 +146,7 @@ button:hover {
 }
 
 
+
 @media only screen and (max-width: 880px) {
 
   .welcome-pic{
@@ -148,3 +154,49 @@ button:hover {
   }
 
   }
+
+@media only screen and (max-width: 340px) {
+  .latestvideo {
+    margin-top: 120px;
+    height: 300px;
+  }
+
+  .background-video {
+    width: 35vh;
+    height: 20vh;
+  }
+
+  .overtext {
+    width: 50vh;
+    height: 20vh;
+    margin-top: -250px;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .latestvideo {
+    margin-top: 120px;
+    height: 300px;
+  }
+
+  .background-video {
+    width: 30vh;
+    height: 25vh;
+  }
+
+  .overtext {
+    width: 50vh;
+    height: 20vh;
+    margin-top: -230px;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  button {
+    margin-top: 30px;
+  }
+}
