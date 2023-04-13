@@ -18,11 +18,11 @@ body {
   display: flex;
   position: block;
   width: 100%;
-  top: -70px;
+  top: -20vh;
   margin-left: auto;
   margin-right: auto;
   height: auto;
-  top: 0px;
+  top: 0vh;
   z-index: 2;
 }
 
@@ -30,7 +30,7 @@ body {
   position: block;
   display: flex;
   justify-content: center;
-  height: 400px;
+  height: 200vh;
   z-index: 1;
 }
 
@@ -38,7 +38,7 @@ body {
   position: absolute;
   width: 110vh;
   height: 60vh;
-  margin-top: -120px;
+  margin-top: -17vh;
   border-radius: 30px;
   opacity: 0.7;
   background-color: var(--videobackground);
@@ -53,10 +53,10 @@ button {
   background-color: var(--button);
   align-items: center;
   color: white;
-  margin-top: 290px;
+  margin-top: 34vh;
   letter-spacing: 2px;
-  height: 30px;
-  width: 250px;
+  height: 3.5vh;
+  width: 25vh;
   border-radius: 15px;
   opacity: 0.6;
   z-index: 4;
@@ -64,7 +64,7 @@ button {
 
 .video {
   position: absolute;
-  margin-top: -40px;
+  margin-top: -4vh;
   z-index: 3;
 }
 
@@ -77,22 +77,25 @@ button:hover {
   position: relative;
   text-align: center;
   width: 100vh;
-  top: -90px;
+  top: -12vh;
   z-index: 4;
   color: white;
 }
 
 @media only screen and (max-width: 1244px) {
+
   body {
-    height: 110vh;
+    height: 120vh;
   }
+
   .welcome-pic {
-    margin-top: -40px;
+    margin-top: -10vh;
     width: 100%;
   }
 
   .latestvideo {
-    margin-top: 100px;
+    margin-top: 10vh;
+    height: 50vh;
   }
 
   .background-video {
@@ -101,6 +104,7 @@ button:hover {
 
   .overtext {
     width: 80vh;
+    height: 10vh;
     margin-left: 20%;
     margin-right: 20%;
     text-align: center;
@@ -116,7 +120,7 @@ button:hover {
 
 @media only screen and (max-width: 750px) {
   .latestvideo {
-    margin-top: 120px;
+    margin-top: 20vh;
     height: 300px;
   }
 
