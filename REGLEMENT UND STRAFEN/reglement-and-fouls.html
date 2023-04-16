@@ -17,7 +17,7 @@
       <nav class="navbar">
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="/HOME/home.html" class="nav-link">HOME</a>
+            <a href="/Home/home.html" class="nav-link">HOME</a>
           </li>
           <li class="nav-item">
             <a href="/NEWS/news.html" class="nav-link">NEWS</a>
@@ -92,21 +92,33 @@
       </section>
 
       <section id="rules">
-        <div class="rules-c" onclick="showrules()"><h2>Rules<h3 id="rulesarrow">↓</h3></h2></div>
+        <div class="rules-c" onclick="showrules()">
+          <h2>
+            Rules
+            <h3 id="rulesarrow">↓</h3>
+          </h2>
+        </div>
         <!-- Add your rule items here -->
+
         <img id="rulespic" src="/1. Anderes/Relgement, PP und Gamesettings/soc-official-reglement.png" alt="Es gibt aktuell Probleme mit diesem Bild, versuche es später noch einmal!">
       </section>
 
       <section id="penalties">
-        <div class="penalty-c" onclick="showpenalty()"><h2>Penalties<h3 id="penaltyarrow">↓</h3></h2></div>
+        <div class="penalty-c" onclick="showpenalty()">
+          <h2>
+            Penalties
+            <h3 id="penaltyarrow">↓</h3>
+          </h2>
+        </div>
         <!-- Add your penalty items here -->
+
         <img id="penaltypic" src="/1. Anderes/Relgement, PP und Gamesettings/soc-official-pp-concept.png" alt="Es gibt aktuell Probleme mit diesem Bild, versuche es später noch einmal!">
       </section>
 
       <section id="contact">
         <h2>Contact Us</h2>
-        <br>
-        <br>
+        <br />
+        <br />
         <form id="contact-form">
           <input type="text" name="name" placeholder="Name" required />
           <input type="email" name="email" placeholder="Email" required />
@@ -116,16 +128,13 @@
           <div id="success-message" style="display: none">
             <span>&#10003;</span> Email sent successfully
           </div>
-          <div id="error-message" class="message" style="display: none;">
-            <span>&#9587;</span> Error: An error occurred.
-          </div>
         </form>
       </section>
     </div>
     <footer>
       <p>
-        Copyright &copy; <span id="current-year"></span> SOC Reglement & Penalties. All
-        rights reserved.
+        Copyright &copy; <span id="current-year"></span> SOC Reglement &
+        Penalties. All rights reserved.
       </p>
     </footer>
     <script src="/1. Anderes/Current Year/currentyear.js"></script>

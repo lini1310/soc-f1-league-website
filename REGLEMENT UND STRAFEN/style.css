@@ -2,7 +2,7 @@
   font-family: "F1";
   src: url("/1. Anderes/font/Formula1-Regular.ttf");
 }
-body {
+body{
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -47,8 +47,7 @@ section h3 {
 }
 
 /* Rules and Penalties Sections */
-#rules,
-#penalties {
+#rules, #penalties {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -79,8 +78,7 @@ section h3 {
   display: none;
 }
 
-.rule,
-.penalty {
+.rule, .penalty {
   flex: 1;
   min-width: 45%;
   background-color: #f3f3f3;
@@ -88,13 +86,11 @@ section h3 {
   border-radius: 5px;
 }
 
-.rule h3,
-.penalty h3 {
+.rule h3, .penalty h3 {
   font-size: 1.5rem;
 }
 
-.rule p,
-.penalty p {
+.rule p, .penalty p {
   font-size: 1rem;
 }
 
@@ -106,8 +102,7 @@ section h3 {
   align-items: center;
 }
 
-#contact input,
-#contact textarea {
+#contact input, #contact textarea {
   padding: 0.5rem;
   border: 1px solid #ccc;
   min-width: 45%;
@@ -142,22 +137,6 @@ section h3 {
   z-index: 1000;
   transition: opacity 0.3s ease;
 }
-#error-message {
-  position: fixed;
-  bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #d11919;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 5px;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  z-index: 1000;
-  transition: opacity 0.3s ease;
-}
 
 
 
@@ -172,91 +151,90 @@ footer {
 
 
 
-/* Media Queries */
-  @media screen and (max-width: 1100px) {
-    img {
-      height: auto;
-      width: 90%;
-    }
-  }
-
-
- @media screen and (max-width: 770px) {
-  hero {
-    background-color: #f3f3f3;
-    padding: 1rem 0;
-    text-align: center;
-  }
-  
-  #hero h1 {
-    font-size: 1.5rem;
-  }
-  
-  #hero p {
-    font-size: 0.8rem;
-  }
-
-  #contact input,
-  #contact textarea {
-    min-width: 70%;
-    max-width: 70%;
-  }
-
-  footer {
-    font-size: 0.75rem;
+@media screen and (max-width: 1100px) {
+  img {
+    height: auto;
+    width: 90%;
   }
 }
 
+
+@media screen and (max-width: 770px) {
+hero {
+  background-color: #f3f3f3;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 1.5rem;
+}
+
+#hero p {
+  font-size: 0.8rem;
+}
+
+#contact input,
+#contact textarea {
+  min-width: 70%;
+  max-width: 70%;
+}
+
+footer {
+  font-size: 0.75rem;
+}
+}
+
 @media screen and (max-width: 555px) {
-  #hero {
-    background-color: #f3f3f3;
-    padding: 1.5rem 0;
-    text-align: center;
-  }
-  
-  #hero h1 {
-    font-size: 1.5rem;
-  }
-  
-  #hero p {
-    font-size: 0.8rem;
-  }
+#hero {
+  background-color: #f3f3f3;
+  padding: 1.5rem 0;
+  text-align: center;
+}
 
-  #rules h2, #rulesarrow, #penalties h2, #penaltyarrow, #contact h2 {
-    font-size: 1.5rem;
-  }
+#hero h1 {
+  font-size: 1.5rem;
+}
+
+#hero p {
+  font-size: 0.8rem;
+}
+
+#rules h2, #rulesarrow, #penalties h2, #penaltyarrow, #contact h2 {
+  font-size: 1.5rem;
+}
 
 
-  button {
-    height: 40px;
-  }
+button {
+  height: 40px;
+}
 }
 
 
 @media screen and (max-width: 430px) {
-  #hero {
-    background-color: #f3f3f3;
-    padding: 2rem 0;
-    text-align: center;
-  }
-  
-  #hero h1 {
-    font-size: 1rem;
-  }
-  
-  #hero p {
-    display: none;
-  }
+#hero {
+  background-color: #f3f3f3;
+  padding: 2rem 0;
+  text-align: center;
+}
 
-  #rules h2, #rulesarrow, #penalties h2, #penaltyarrow, #contact h2 {
-    font-size: 1.5rem;
-  }
+#hero h1 {
+  font-size: 1rem;
+}
 
-  button {
-    height: 40px;
-  }
+#hero p {
+  display: none;
+}
 
-  footer {
-    font-size: 0.75rem;
-  }
+#rules h2, #rulesarrow, #penalties h2, #penaltyarrow, #contact h2 {
+  font-size: 1.5rem;
+}
+
+button {
+  height: 40px;
+}
+
+footer {
+  font-size: 0.75rem;
+}
 }
