@@ -6,7 +6,8 @@
 }
 
 body {
-  height: 180vh;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -14,17 +15,16 @@ body {
   src: url("/1. Anderes/font/Formula1-Regular.ttf");
 }
 
-.pic1 {
+.background{
   position: absolute;
-  display: flex;
-  top: 0vh;
-  left: 0vh;
-  width: 100%;
-  height: auto;
+  left: -1vw;
+  right: 0;
+  top: -120vh;
+  width: 110%;
+  height: 350%;
+  object-fit: cover;
   z-index: -10;
-  overflow: hidden;
 }
-
 .welcome {
   position: absolute;
   display: flex;
@@ -63,6 +63,8 @@ body {
   z-index: 3;
 }
 
+
+
 .latestvideo {
   position: absolute;
   display: flex;
@@ -85,6 +87,7 @@ body {
   position: absolute;
   margin-top: 9vh;
 }
+
 
 .btn-twitch {
   width: 20vh;
