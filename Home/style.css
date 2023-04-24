@@ -192,46 +192,8 @@ button:hover {
 }
 
 @media only screen and (max-width: 1480px) {
-
-  body {
+  :root {
     all: unset;
-    width: 100%;
-    height: 100%;
-  }
-
-  .pic1 {
-    display: none;
-  }
-
-  .welcome {
-    all: unset;
-    padding: 0;
-    margin: 0;
-
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    height: 20vh;
-    width: 20vh;
-    background-color: black;
-    top: 0vh;
-    border-radius: 20px;
-    z-index: 1;
-    }
-
-  .latestvideo {
-    top: 0%;
-    left: 0%;
-  }
-
-  .discord {
-    top: 0%;
-    left: 0%;
-  }
-
-  .bug-message {
-    top: 0%;
-    left: 0%;
   }
 
 }
