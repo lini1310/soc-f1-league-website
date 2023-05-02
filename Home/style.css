@@ -6,8 +6,7 @@
 }
 
 body {
-  width: 100%;
-  overflow-x: hidden;
+  background-color: white;
 }
 
 @font-face {
@@ -15,185 +14,149 @@ body {
   src: url("/1. Anderes/font/Formula1-Regular.ttf");
 }
 
-.pic1 {
-  position: absolute;
-  display: flex;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: auto;
-  z-index: -10;
-}
 
-.welcome {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  height: 10%;
-  width: 50%;
-  background-color: var(--background);
-  top: 5%;
-  margin-left: 45%;
-  border-radius: 20px;
-  z-index: 1;
-}
-
-.welcome h1 {
-  position: absolute;
-  text-align: center;
-  font-size: 6vh;
-  margin-top: 2.5%;
-  color: white;
-  z-index: 2;
-}
-
-.welcome p {
-  position: absolute;
-  text-align: center;
-  font-size: 2vh;
-  margin: 16% 5% 0;
-  color: white;
-  z-index: 2;
-}
-
-.btn-welcome {
-  width: 20%;
-  height: 6%;
-  margin-top: 42%;
-  z-index: 3;
-}
-
-
-
-.latestvideo {
-  position: absolute;
-  display: flex;
-  height: 11%;
-  width: 50%;
-  background-color: var(--background);
-  margin-top: 73%;
-  margin-left: 6%;
-  justify-content: center;
-  border-radius: 20px;
-}
-
-.overtext {
-  position: absolute;
-  margin-top: 3%;
-  color: white;
-}
-
-.video {
-  position: absolute;
-  margin-top: 10%;
-}
-
-
-.btn-twitch {
-  width: 20%;
-  height: 5.5%;
-  margin-top: 48%;
-}
-
-
-.discord {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  height: 50%;
-  width: 50%;
-  background-color: var(--background);
-  top: 5%;
-  margin-left: 45%;
-  margin-top: 144%;
-  border-radius: 20px;
-  z-index: 1;
-}
-
-.discord h1 {
-  position: absolute;
-  text-align: center;
-  font-size: 6vh;
-  margin-top: 2.5%;
-  color: white;
-  z-index: 2;
-}
-
-.discord p {
-  position: absolute;
-  text-align: center;
-  font-size: 2vh;
-  margin: 18% 5% 0;
-  color: white;
-  z-index: 2;
-}
-
-.btn-discord {
-  width: 20%;
-  height: 7%;
-  margin-top: 42%;
-  z-index: 3;
-}
-
-.bug-message {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  height: 47%;
-  width: 50%;
-  background-color: var(--background);
-  top: 5%;
-  margin-left: 6%;
-  margin-top: 203%;
-  border-radius: 20px;
-  z-index: 1;
-}
-
-.bug-message h1 {
-  position: absolute;
-  text-align: center;
-  font-size: 6vh;
-  margin-top: 2.5%;
-  color: white;
-  z-index: 2;
-}
-
-.bug-message p {
-  position: absolute;
-  text-align: center;
-  font-size: 2vh;
-  margin: 16% 5% 0;
-  color: white;
-  z-index: 2;
-}
-
-.btn-bug-message {
-  width: 20%;
-  height: 7%;
-  margin-top: 38%;
-  z-index: 3;
-}
-
-/*button*/
-
-button {
-  border-radius: 20px;
-  background-color: var(--button-hover-background);
-  border: none;
-  font-family: F1;
-  font-weight: bold;
-  font-size: 1.6vh;
-}
-
-button:hover {
-  background-color: var(--button-hover-background);
-  color: white;
-  cursor: pointer;
-}
-
-@media only screen and (max-width: 1480px) {
-  :root {
-    all: unset;
+  .welcome-pic {
+    top: 0;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -999;
   }
 
-}
+    /*ALLGEMEIN*/
+
+    button {
+      position: absolute;
+      height: 2rem;
+      width: 10rem;
+      bottom: 3vh;
+      border-radius: 20px;
+      background-color: var(--button);
+      cursor: pointer;
+      color: white;
+      font-family: f1;
+      border: none;
+    }
+  
+    button:hover {
+      background-color: var(--button-hover-background);
+      color: black;
+      font-weight: bold;
+    }
+
+
+    /*WELCOME (1/4)*/
+
+  .welcome {
+    position: absolute;
+    display: flex;
+    top: 15rem;
+    left: 48%;
+    width: 45%;
+    height: 23rem;
+    width: 45%;
+    background-color: var(--background);
+    color: white;
+    justify-content: center;
+    border-radius: 20px;
+  }
+
+  .welcome h1 {
+    position: absolute;
+    margin-top: 3%;
+  }
+
+  .welcome p {
+    position: absolute;
+    margin: 0 5vh 0;
+    margin-top: 15%;
+  }
+
+  
+
+
+  /*LATEST VIDEO (2/4)*/
+
+  .latestvideo {
+    position: absolute;
+    display: flex;
+    top: 62rem;
+    left: 7%;
+    width: 50%;
+    height: 30rem;
+    width: 45%;
+    background-color: var(--background);
+    color: white;
+    justify-content: center;
+    border-radius: 20px;
+  }
+
+  #overtext {
+    position: absolute;
+    margin-top: 3%;
+  }
+
+  .video {
+    position: absolute;
+    top: 13%;
+    height: 50vh;
+    width: auto;
+  }
+ 
+
+  /*DISCORD (3/4)*/
+
+  .discord {
+    position: absolute;
+    display: flex;
+    top: 130rem;
+    left: 48%;
+    width: 45%;
+    height: 23rem;
+    width: 45%;
+    background-color: var(--background);
+    color: white;
+    justify-content: center;
+    border-radius: 20px;
+  }
+
+  .discord h1 {
+    position: absolute;
+    margin-top: 3%;
+  }
+
+  .discord p {
+    position: absolute;
+    margin: 0 5vh 0;
+    margin-top: 17%;
+  }
+
+
+  /*BUG MESSAGE (4/4)*/
+
+  .bug-message {
+    position: absolute;
+    display: flex;
+    top: 185rem;
+    left: 7%;
+    width: 45%;
+    height: 23rem;
+    width: 45%;
+    background-color: var(--background);
+    color: white;
+    justify-content: center;
+    border-radius: 20px;
+  }
+
+  .bug-message h1 {
+    position: absolute;
+    margin-top: 3%;
+  }
+
+  .bug-message p {
+    position: absolute;
+    margin: 0 5vh 0;
+    margin-top: 17%;
+  }
+
+
