@@ -27,8 +27,8 @@ body {
 
     button {
       position: absolute;
-      height: 2rem;
-      width: 10rem;
+      height: 5vh;
+      width: 25vh;
       bottom: 3vh;
       border-radius: 20px;
       background-color: var(--button);
@@ -50,7 +50,7 @@ body {
   .welcome {
     position: absolute;
     display: flex;
-    top: 15rem;
+    top: 30vh;
     left: 48%;
     width: 45%;
     height: 23rem;
@@ -80,7 +80,7 @@ body {
   .latestvideo {
     position: absolute;
     display: flex;
-    top: 62rem;
+    top: 140vh;
     left: 7%;
     width: 50%;
     height: 30rem;
@@ -109,7 +109,7 @@ body {
   .discord {
     position: absolute;
     display: flex;
-    top: 130rem;
+    top: 290vh;
     left: 48%;
     width: 45%;
     height: 23rem;
@@ -137,7 +137,7 @@ body {
   .bug-message {
     position: absolute;
     display: flex;
-    top: 185rem;
+    top: 415vh;
     left: 7%;
     width: 45%;
     height: 23rem;
