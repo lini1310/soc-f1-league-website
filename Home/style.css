@@ -1,4 +1,5 @@
 :root {
+  --wb: #9b9090;
   --background: rgba(46, 46, 46, 0.7);
   --videobackground: #616161;
   --button: #333333;
@@ -6,7 +7,9 @@
 }
 
 body {
-  background-color: white;
+height: 430vh;
+overflow-x: hidden;
+background-color: white;
 }
 
 @font-face {
@@ -18,12 +21,16 @@ body {
   .welcome-pic {
     top: 0;
     width: 100%;
-    height: auto;
     position: absolute;
     z-index: -999;
   }
 
     /*ALLGEMEIN*/
+
+  p {
+    padding-left: 4px;
+    border-left: solid red;
+  }
 
     button {
       position: absolute;
@@ -160,3 +167,102 @@ body {
   }
 
 
+  /*RESPONSIVE DESIGN*/
+
+  @media screen and (max-width: 1333px) {
+    body {
+      height: auto;
+      background-color: var(--wb);
+    }
+
+    .welcome-pic {
+      display: none;
+    }
+
+    .welcome, .latestvideo, .bug-message, .discord {
+      left: 20%;
+      right: 20%;
+      width: 60%;
+    }
+
+  }
+
+  @media screen and (max-width: 990px) {
+
+    body {
+      height: 310vh;
+    }
+
+    .video {
+      display: none;
+    }
+
+    .latestvideo {
+      height: 9rem;
+      margin-top: -30vh;
+    }
+
+    .overtext {
+      margin: 0 5% 0;
+    }
+
+    .discord {
+      margin-top: -134vh;
+    }
+
+    .bug-message {
+      margin-top: -175vh;
+    }
+  }
+
+  @media screen and (max-width: 671px) {
+    
+    .discord, .bug-message, .welcome {
+      height: 20rem;
+    }
+
+    h1 {
+      font-size: 1.3rem;
+    }
+
+    p {
+      top: 3vh;
+      font-size: 0.8rem;
+    }
+
+    button {
+      width: 90%;
+    }
+
+    
+  }
+
+  @media screen and (max-width: 571px) {
+    .discord, .bug-message, .welcome {
+      height: 15rem;
+    }
+
+    h1 {
+      font-size: 1rem;
+    }
+
+    p {
+      height: 15vh;
+      padding-left: 4px;
+      border-left: solid red;
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+
+    .latestvideo {
+      height: 12rem;
+      margin-top: -44vh;
+    }
+
+  }
+
+  @media screen and (max-width: 342px) {
+    h1 {
+      font-size: 0.8rem;
+    }
+  }
